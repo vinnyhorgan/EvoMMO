@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pesto", "Pesto\Pesto.csproj", "{34568925-E027-4B47-9626-65A006CA2725}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{5223DD23-2305-42DC-8AAF-ACFE4A2B0380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{A65BDBA1-526E-4B18-8286-25D631BE7D25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34568925-E027-4B47-9626-65A006CA2725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34568925-E027-4B47-9626-65A006CA2725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34568925-E027-4B47-9626-65A006CA2725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34568925-E027-4B47-9626-65A006CA2725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5223DD23-2305-42DC-8AAF-ACFE4A2B0380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5223DD23-2305-42DC-8AAF-ACFE4A2B0380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5223DD23-2305-42DC-8AAF-ACFE4A2B0380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5223DD23-2305-42DC-8AAF-ACFE4A2B0380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65BDBA1-526E-4B18-8286-25D631BE7D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65BDBA1-526E-4B18-8286-25D631BE7D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65BDBA1-526E-4B18-8286-25D631BE7D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65BDBA1-526E-4B18-8286-25D631BE7D25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
