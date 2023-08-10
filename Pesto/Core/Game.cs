@@ -1,24 +1,42 @@
-﻿namespace Pesto.Core
+﻿using System;
+using Raylib_cs;
+using Pesto.Utility;
+
+namespace Pesto.Core
 {
-    public class Game
+    public class Game : IDisposable
     {
-        private static Game _instance;
+        public static Game Instance;
 
-        private Game()
+        public Game(string title = "Pesto Game", int width = 800, int height = 600, int targetFps = 60)
         {
+            Logger.Init(true);
 
+            Raylib.SetConfigFlags(ConfigFlags.FLAG_WINDOW_RESIZABLE | ConfigFlags.FLAG_WINDOW_ALWAYS_RUN | ConfigFlags.FLAG_MSAA_4X_HINT);
+            Raylib.InitWindow(width, height, title);
+            Raylib.SetWindowMinSize(width, height);
+            Raylib.SetTargetFPS(targetFps);
+
+            Raylib.InitAudioDevice();
+
+            Instance = this;
         }
 
-        public static Game Instance
+        public void Dispose()
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new Game();
-                }
+            Raylib.CloseAudioDevice();
+            Raylib.CloseWindow();
+        }
 
-                return _instance;
+        public void Start()
+        {
+            while (!Raylib.WindowShouldClose())
+            {
+                Raylib.BeginDrawing();
+
+                Raylib.ClearBackground(Color.BLACK);
+
+                Raylib.EndDrawing();
             }
         }
     }
